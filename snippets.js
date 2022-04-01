@@ -8,13 +8,32 @@ function includeHTMLSnippet() {
 
         // Search for elements with
         // specific attributes
-        file = element.getAttribute("checkbox");
+        file = element.getAttribute(
+            "checkbox");
 
         if (file) {
-            element.innerHTML = this.responseText;
-            element.removeAttribute("checkbox");
-            includeHTMLSnippet();
-            return;
+            xmlRequest = new XMLHttpRequest();
+            xmlRequest.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        element.innerHTML += this.responseText;
+                    }
+
+                    if (this.status == 404) {
+                        element.innerHTML = "Page not found.";
+                    }
+
+                    // Delete the attribute and
+                    // call this function again.
+                    element.removeAttribute(
+                        "checkbox");
+
+                    includeHTMLSnippet();
+                }
+            }
+            xmlRequest.open("GET", file, true);
+            xmlRequest.send();
+            return; // Exit function.
         }
     }
 };
