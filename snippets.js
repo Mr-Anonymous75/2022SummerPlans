@@ -5,12 +5,18 @@ function includeHTMLSnippet() {
     id = document.getElementsByTagName("*");
     for (i = 0; i < id.length; i++) {
         element = id[i];
+
+        // Search for elements with
+        // specific attributes
         file = element.getAttribute("checkbox");
 
         if (file) {
-            element.innerHTML =
-                "<input id=\"termsCheck\" type=\"checkbox\" name=\"terms\" />"
-                + element.innerHTML;
+            element.innerHTML = this.responseText;
+            element.removeAttribute("checkbox");
+            includeHTMLSnippet();
+            return;
         }
     }
 };
+
+includeHTMLSnippet();
