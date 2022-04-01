@@ -6,7 +6,7 @@
 </head>
 
 <h1>Quiz Web App</h1>
-<p checkbox="checkbox.html">C# serves-rside</p>
+<p checkbox="checkbox.html">C# server-side</p>
 
 <script>
     function includeHTMLSnippet() {
@@ -31,7 +31,7 @@
                 xmlRequest.onreadystatechange = function () {
                     if (this.readyState == 4) {
                         if (this.status == 200) {
-                            element.innerHTML = this.responseText;
+                            element.innerHTML += this.responseText;
                         }
 
                         if (this.status == 404) {
