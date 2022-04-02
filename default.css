@@ -1,0 +1,57 @@
+body {
+    background-color: #242427;
+}
+
+h1 {
+    font-family: "Indie Flower", cursive;
+    color: #8080c0;
+}
+
+body {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+}
+
+.checkbox {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox>span {
+    color: #8080c0;
+    padding: 0.5rem 0.25 rem;
+}
+
+.checkbox>input {
+    height: 25px;
+    width: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1.5px solid #8080c0;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.3s;
+    background-color: #00000000;
+    cursor: pointer;
+}
+
+.checkbox>input:checked {
+    background-color: #8080c0;
+}
+
+.checkbox>input:checked+span::before {
+    content: '\2713';
+    display: block;
+    text-align: center;
+    color: #242427;
+    position: absolute;
+    left: 0.7rem;
+    top: 0.2rem;
+}
+
+.checkbox>input:active {
+    background-color: #8080c0;
+}
