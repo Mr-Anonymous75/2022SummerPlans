@@ -20,7 +20,8 @@ body {
 
 .checkbox>span {
     color: #8080c0;
-    padding: 0.5rem 0.25 rem;
+    padding: 0.5rem 0.25rem;
+    font-family: monospace;
 }
 
 .checkbox>input {
