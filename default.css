@@ -51,6 +51,7 @@ body {
     position: absolute;
     left: 0.7rem;
     top: 0.2rem;
+    font-family: "Anonymous Pro";
 }
 
 .checkbox>input:active {
