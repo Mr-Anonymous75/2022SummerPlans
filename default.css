@@ -51,7 +51,8 @@ body {
     position: absolute;
     left: 0.7rem;
     top: 0.2rem;
-    font-family: "Anonymous Pro";
+    font-family: "Arial";
+    transition-duration: 1s;
 }
 
 .checkbox>input:active {
