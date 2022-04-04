@@ -4,13 +4,14 @@ body {
 
 h1 {
     font-family: "Indie Flower", cursive;
-    font-size: 10rem;
+    font-size: 8rem;
     color: #8080c0;
 }
 
 body {
     color: whitesmoke;
     font-family: "Poppins", sans-serif;
+    font-size: 2rem;
 }
 
 .checkbox {
@@ -22,7 +23,6 @@ body {
 .checkbox>span {
     color: #8080c0;
     padding: 0.5rem 0.25rem;
-    font-family: monospace;
 }
 
 .checkbox>input {
@@ -50,7 +50,7 @@ body {
     text-align: center;
     color: #242427;
     position: absolute;
-    left: 0.65rem;
+    left: 0.6333rem;
     top: 0.2333rem;
     font-family: "Arial";
     transition-duration: 1s;
