@@ -4,14 +4,14 @@ body {
 
 h1 {
     font-family: "Indie Flower", cursive;
-    font-size: 8rem;
+    font-size: 6rem;
     color: #8080c0;
 }
 
 body {
     color: whitesmoke;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .checkbox {
