@@ -49,8 +49,9 @@ body {
     text-align: center;
     color: #242427;
     position: absolute;
-    left: 0.6rem;
+    left: 0.7rem;
     top: 0.2rem;
+    font-family: "Arial";
     transition-duration: 1s;
 }
 
